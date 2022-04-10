@@ -95,7 +95,8 @@ button.btn.login-btn:hover {
 nav.main-header {
     width: 100%;
     height: 100px;
-    background: none display: grid;
+    background: none;
+    display: grid;
     grid-template-columns: 1fr 1fr;
     position: fixed;
     top: 0;
@@ -210,7 +211,7 @@ div#word-mark h1 a {
     -ms-flex-align: center;
     align-items: center;
     border-radius: 50%;
-    cursor: pointer;
+    /* cursor: pointer; */
     display: none;
 }
 
