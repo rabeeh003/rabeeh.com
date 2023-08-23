@@ -1,0 +1,14 @@
+.skil-img{
+    margin: 20px 10px;
+}
+.skil-img div{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 30px 5px;
+}
+
+.skil-img img{
+    width: 70px;
+}
+
