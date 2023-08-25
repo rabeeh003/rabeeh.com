@@ -12,3 +12,11 @@
     width: 70px;
 }
 
+.sevice div{
+    flex-direction: column;
+}
+
+.sevice img{
+    width: 150px;
+}
+
