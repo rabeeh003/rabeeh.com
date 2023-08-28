@@ -385,7 +385,7 @@
                             <div class="col">
                               <div class="input-group"><span class="input-group-addon"><i
                                     class="fa fa-user-circle"></i></span>
-                                <input class="form-control" type="text" name="name" placeholder="Name"
+                                <input class="form-control" type="text" id="name" name="name" placeholder="Name"
                                   onkeydown="return /[a-zA-Z]/i.test(event.key)" required="required" />
                               </div>
                             </div>
@@ -394,7 +394,7 @@
                             <div class="col">
                               <div class="input-group"><span class="input-group-addon"><i
                                     class="fa fa-phone"></i></span>
-                                <input class="form-control" type="number" name="Number" placeholder="Number"
+                                <input class="form-control" id="fnumber" type="number" name="Number" placeholder="Number"
                                   oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*)\./g, '$1')"
                                   required="required" />
                               </div>
@@ -404,7 +404,7 @@
                             <div class="col">
                               <div class="input-group"><span class="input-group-addon"><i
                                     class="fa fa-envelope"></i></span>
-                                <input class="form-control" type="email" name="_replyto" placeholder="E-mail"
+                                <input class="form-control" id="mail" type="email" name="_replyto" placeholder="E-mail"
                                   required="required" />
                               </div>
                             </div>
@@ -419,7 +419,7 @@
                           </div>
                           <div class="row">
                             <div class="col">
-                              <button class="btn btn-info" type="submit">Send</button>
+                              <button class="btn btn-info" onclick="validation()" type="submit">Send</button>
                             </div>
                           </div>
                         </form>
@@ -494,6 +494,26 @@
         }
       })
     })
+
+    function validation() {
+      var name = document.getElementById("name")
+      var mobail = document.getElementById("fnumber")
+      var mail = document.getElementById("mail")
+      if(name.innerText === ''){
+        name.placeholder = "Add name"
+        name.classList.add("place-color")
+      }
+      
+      if(mobail.innerText === ''){
+        mobail.placeholder = "Add Number"
+        mobail.classList.add("place-color")
+      }
+
+      if(mail.innerText === ''){
+        mail.placeholder = "Add mail"
+        mail.classList.add("place-color")
+      }
+    }
   </script>
 </body>
 
