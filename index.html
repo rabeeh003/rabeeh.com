@@ -110,7 +110,7 @@
                   <div class="h4 mt-0 title">Basic Information</div>
                   <div class="row">
                     <div class="col-sm-4"><strong class="text-uppercase">Age:</strong></div>
-                    <div class="col-sm-8">20</div>
+                    <div class="col-sm-8"><span id="age"></span></div>
                   </div>
                   <!-- <div class="row mt-3">
                     <div class="col-sm-4"><strong class="text-uppercase">Email:</strong></div>
@@ -272,9 +272,7 @@
                     <figure class="cc-effect"><img src="images/gtravel.png" alt="google news clone" />
                       <figcaption>
                         <div class="h4">Google travel clone</div>
-                        <a href="https://rabeeh003.github.io/googlenews/">
-                          <button style="color: black;"> Visit</button>
-                        </a>
+                        <button style="color: black;"> Visit</button>
                         <p>This is a clone website project where I've integrated various technologies
                           including html, CSS, bootstrap. its responcive web clone</p>
                       </figcaption>
@@ -287,9 +285,7 @@
                     <figure class="cc-effect"><img src="images/gnews.png" alt="google news clone" />
                       <figcaption>
                         <div class="h4">Google News Clone</div>
-                        <a href="https://rabeeh003.github.io/googlenews/">
-                          <button style="color: black;"> Visit</button>
-                        </a>
+                        <button style="color: black;"> Visit</button>
                         <p>This is a clone website project where I've integrated various technologies
                           including html and CSS.</p>
                       </figcaption>
@@ -304,9 +300,7 @@
                         <div class="h4">Chromebook</div>
                         <p>This is a clone website project where I've integrated various technologies
                           including html and CSS.</p>
-                        <a href="https://rabeeh003.github.io/chromebook/">
-                          <button style="color: black;"> Visit</button>
-                        </a>
+                        <button style="color: black;"> Visit</button>
                       </figcaption>
                     </figure>
                   </div>
@@ -431,8 +425,8 @@
                         <p class="pb-2">Malappuram, kerala, india</p>
                         <p class="mb-0"><strong>Phone</strong></p>
                         <p class="pb-2">+91 9605568440</p>
-                        <p class="mb-0"><strong>Email</strong></p>
-                        <p>rabimon003@gmail.com</p>
+                        <!-- <p class="mb-0"><strong>Email</strong></p>
+                        <p>rabimon003@gmail.com</p> -->
                       </div>
                     </div>
                   </div>
@@ -514,6 +508,13 @@
         mail.classList.add("place-color")
       }
     }
+  </script>
+  <script src="./js/age.js"></script>
+  <script>
+    // Call the function to initially set your age
+    updateAge();
+    // Update your age automatically at midnight (or periodically as needed)
+    setInterval(updateAge, 1000 * 60 * 60 * 24); // Update once per day (adjust as needed)
   </script>
 </body>
 
